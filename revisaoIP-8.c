@@ -3,7 +3,11 @@
 
 #define SIM 1
 #define NAO 0
-
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 8
+ * O programa a seguir verifica se o numero da entra é primo
+ * ou nao e exibe o resultado na tela
+ **/
 int primo(int n){
     int i = 2;
 

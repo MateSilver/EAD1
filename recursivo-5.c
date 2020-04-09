@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * inf/UFG - AED1: lista de exercicios de recursividade - 5
+ * o programa a seguir faz a conversao de um numero decimal 'n'
+ * da entrada, em seu respectivo numero em base binaria
+ */
 void binarios(int n){
     if(n/2 == 0){
         printf("%d", n%2);

@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * inf/UFG - AED1: lista de exercicios de recursividade - 3
+ * o programa a seguir implementa o conceito da recursao da funcao de ackerman
+ *  a partir da entrada de 'm' e 'n' 
+ **/
 int ackermann(int m, int n){
     if(m == 0){
         return(n+1);

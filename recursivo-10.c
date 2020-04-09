@@ -1,7 +1,14 @@
 #include <stdio.h>
 #define maximo 100
 
-void trilha(char m[maximo][maximo],int aux[maximo][maximo],int lin,int col){
+/**
+ * inf/UFG - AED1: lista de exercicios de recursividade - 10
+ * O programa a seguir analiza uma matriz de setas --A,V,<,>--
+ * e conta o numero de casas seguras,ou seja, de um caminho que
+ * nao leve ate fora dos limites da matriz, usando uma matriz
+ * auxiliar para marcar os caminhos nao seguros
+ */
+void trilha(char m[][maximo],int aux[][maximo],int lin,int col){
     if(m[lin+1][col] == 'A' || m[lin-1][col] == 'V' || m[lin][col-1] == '>' || m[lin][col+1] == '<'){
         if(m[lin+1][col] == 'A'){
             aux[lin+1][col] = 1;
@@ -23,7 +30,7 @@ void trilha(char m[maximo][maximo],int aux[maximo][maximo],int lin,int col){
     return;
 }
 
-void varrer(char m[maximo][maximo],int aux[maximo][maximo],int n){
+void varrer(char m[][maximo],int aux[][maximo],int n){
     int i=0;
     while(i<n){
         if(m[0][i] == 'A'){

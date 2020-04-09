@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 4
+ * o programa a seguir verifica se um numero de quatro 
+ * digitos na entrada e igual a seu inverso
+ **/
 int inverter(int n){
     int unidade = n%10;
     int dezena  = (n%100)/10;

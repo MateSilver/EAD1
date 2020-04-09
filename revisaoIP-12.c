@@ -1,6 +1,20 @@
 #include <stdio.h>
-
-void PrintTrans(int* matriz, int m,int n){
+#define max 100
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 12
+ * programa para exibir inversos e transpostas de matrizes
+ * ---ainda em desenvolvimento---
+ **/
+void readMatriz(int matriz[][max], int m, int n){
+    int i;
+    int j;
+    for(i=0; i<m; i++){
+        for(j=0; j<n; j++){
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+}
+void PrintTrans(int matriz[][max], int m,int n){
     int i, j;
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
@@ -17,7 +31,7 @@ int main(){
     scanf("%d", &n);
 
     int matriz[m][n];
-    readMatriz(matriz);
+    readMatriz(matriz,m,n);
     getchar();
     char c = getchar();
     if(c == 'I'){

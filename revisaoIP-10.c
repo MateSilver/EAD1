@@ -2,6 +2,16 @@
 #include <math.h>
 #define pi 3.14159265
 
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 10
+ * O programa a seguir realiza operacoes de pra obter areas de
+ * formas geometricas baseados em entradas:
+ * Z => trapezio
+ * T => triangulo
+ * C => circulo
+ * E => elipse
+ * em seguida, com base na escolha, requer entrada de outros dados
+ **/
 int A_circulo(){
     int r;
 

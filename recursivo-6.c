@@ -2,6 +2,12 @@
 #define SIM 1
 #define NAO 0
 
+/**
+ * inf/UFG - AED1: lista de exercicios de recursividade - 6
+ * o programa a seguir faz o fatorial duplo de 'n' primeiros
+ * numeros impares da entrada, exibindo a multiplicacao dos 
+ * numeros impares ate n
+ */
 int impar(int n){
     if(n%2 == 0){
         return(NAO);

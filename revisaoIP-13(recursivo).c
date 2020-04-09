@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-unsigned long int makefibonacci (int n){
+/**
+ * inf/UFG - AED1: lista de exercicios de recursividade - 9
+ * programa usando a recursividade para exibir um numero da
+ * posicao 'm' da sequencia de fibonacci
+ **/
+double makefibonacci (int n){
     if(n == 0){
         return(0);
     }
@@ -18,7 +23,7 @@ int main(){
 
     while(n--){
         scanf("%d", &m);
-        printf("%lu\n", makefibonacci(m));
+        printf("%.0lf\n", makefibonacci(m));
     }
 }
 

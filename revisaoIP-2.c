@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 2
+ * o programa a seguir verifica qual o maior dentre dois
+ * numeros invertidos de 3 digitos, invertendo a entrada de
+ *  'n' e 'm'
+ **/
 int inverter(int n){
-    int unidade = n%10; // /*teste*/cout << unidade << endl;
-    int dezena  = (n%100)/10; // /*teste*/cout << dezena << endl;
-    int centena = n/100; // /*teste*/cout << centena << endl;
+    int unidade = n%10;
+    int dezena  = (n%100)/10;
+    int centena = n/100;
 
     return(unidade*100 + dezena*10 + centena);
 }

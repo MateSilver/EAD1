@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * inf/UFG - AED1: lista de exercicios de revisao de IP - 5
+ * o programa a seguir converte um numero decimal da entrada
+ * para um numero em base 4, usando digitos ACGT para exibir
+ **/
 char bio(int n){
     char x;
     if(n >= 0 && n<4){
